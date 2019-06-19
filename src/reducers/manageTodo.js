@@ -14,7 +14,11 @@ export default function manageTodo(state = {
 
       case 'DELETE_TODO':
 
+<<<<<<< HEAD
       return {todos: state.todos.filter(todo => todo.id !== action.payload)}
+=======
+      return {todos: state.todos.filter(todo => todo !== action.payload)}
+>>>>>>> 0fc5c6f5b59bdda352dc2361cf770a6802071544
 
     default:
       return state;
